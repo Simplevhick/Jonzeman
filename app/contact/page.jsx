@@ -30,7 +30,7 @@ const Contact = () => {
             <h3 className="h3 mb-8 text-center xl:text-left">Contact info</h3>
             <div className="flex flex-col items-center xl:items-start gap-12">
               <div className="flex items-start gap-4">
-                <div className="relative w-[36px] h-[36px]">
+                <div className="relative w-[30px] h-[30px] xl:w-[30px] xl:h-[30px]">
                   <Image src="/assets/pin.svg" fill alt="" />
                 </div>
                 <div className="pt-1 flex-1">

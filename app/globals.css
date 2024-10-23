@@ -18,16 +18,16 @@
     @apply text-[64px] leading-none xl:text-[62px] xl:leading-[64px];
   }
   .h2 {
-    @apply text-[40px] leading-[45px] xl:text-[41px] xl:leading-[45px];
+    @apply text-[40px] leading-[45px] xl:text-[37px] xl:leading-[45px];
   }
   .h3 {
-    @apply text-[36px] leading-[48px];
+    @apply text-[30px] leading-[48px] xl:text-[36px] xl:leading-[48px];
   }
   .h4 {
-    @apply text-xl;
+    @apply text-[1.2rem] leading-[1.60rem] xl:text-xl;
   }
   .lead {
-    @apply text-lg mb-4;
+    @apply text-[0.95rem] leading-[1.50rem] mb-4;
   }
   a {
     @apply font-primary;
@@ -39,7 +39,7 @@
 }
 
 .input {
-  @apply h-[58px] bg-white rounded-full px-6
+  @apply h-[50px] bg-white rounded-full px-6
 }
 
 .textarea{

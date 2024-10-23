@@ -54,9 +54,10 @@ const Header = () => {
         >
           <Link href="/">
             <Image
-              src="/assets/example.svg"
+              src="/assets/jonze.png"
+              // src="/assets/example.svg"
               width={60}
-              height={24}
+              height={29}
               priority
               alt=""
             />
