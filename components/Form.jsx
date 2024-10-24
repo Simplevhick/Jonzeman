@@ -1,13 +1,50 @@
+import React, { useEffect, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+
 const Form = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_k2ecmzo", "template_qni6tpl", form.current, {
+        publicKey: "-lmdJWW5ASH8IJ4En",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
-    <form className="flex flex-col gap-4">
-      <input type="text" className="input" placeholder="Full name" />
-      <input type="email" className="input" placeholder="Emaill address" />
-      {/* <input type="text" className="input" placeholder="Phone number" /> */}
-      <textarea className="textarea mb-2" placeholder="Your message" />
-      <button type="submit" className="btn self-start">
-        Send message
-      </button>
+    <form className="flex flex-col gap-4" ref={form} onSubmit={sendEmail}>
+      <input
+        type="text"
+        className="input"
+        placeholder="Full name"
+        name="from_name"
+      />
+      <input
+        type="email"
+        className="input"
+        placeholder="Emaill address"
+        name="from_name"
+      />
+      <textarea
+        className="textarea mb-2"
+        placeholder="Your message"
+        name="message"
+      />
+      <input
+        type="submit"
+        className="btn self-start"
+        placeholder="Send message"
+      />
     </form>
   );
 };

@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { CursorContext } from "@/components/CursorContext";
+import Link from "next/link";
 
 const Details = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
@@ -75,7 +76,9 @@ const Details = () => {
                 </p>
               </div>
             </div>
-            <button className="btn mx-auto xl:mx-0">Discover more</button>
+            <Link href="/contact">
+              <button className="btn mx-auto xl:mx-0">Discover more</button>
+            </Link>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 60 }}
