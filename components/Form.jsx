@@ -19,6 +19,8 @@ const Form = () => {
           console.log("FAILED...", error.text);
         }
       );
+
+    e.target.reset();
   };
 
   return (
