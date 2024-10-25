@@ -21,12 +21,12 @@ const Socials = ({containerStyles}) => {
             </Link>
         </li> */}
         <li>
-            <Link href="https://www.instagram.com/abrahamargon" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.instagram.com/jonzeman_finishing.08064764446/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
             </Link>
         </li>
         <li>
-            <Link href="/" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.tiktok.com/@user77087503991048?lang=en" target="_blank" rel="noopener noreferrer">
                 <FaTiktok />
             </Link>
         </li>
