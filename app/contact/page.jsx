@@ -36,9 +36,9 @@ const Contact = () => {
                 <div className="pt-1 flex-1">
                   <h4 className="h4 mb-2">Address</h4>
                   <p className="leading-relaxed">
-                    17 ogunlana drive igboolomu
+                    48, Owolabi Street, Igboolomu
                     <br />
-                    off agric ikorodu lagos state
+                    Isawo, Agric Ikorodu Lagos.
                   </p>
                 </div>
               </div>
@@ -50,7 +50,7 @@ const Contact = () => {
                   <h4 className="h4 mb-2">Phone number</h4>
                   <div className="pt-1 flex-1">
                     <p>Phone: +234 (0) 806 476 4446</p>
-                    <p>Fax: </p>
+                    
                   </div>
                 </div>
               </div>
